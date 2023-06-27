@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="tip Calculator, calculator">
+    <meta name="description" content="Calculate tip for any product and set number of people paying to calculate each persons amount ">
+    <link rel="shortcut icon" href="/images/math3.jpg" type="image/x-icon">
+    <link rel="Stylesheet" href="/css/Style.css"> 
+    <title>Tip Calculator</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="inputs">
+            <i>Tip Calculator</i>
+            <div class="input-amount">
+                <header>Amount</header>
+                <input id="amount" type="text" placeholder= "$00.00" onkeyup="CalculateBill()" >
+            </div>
+
+            <div class="input-tip">
+                <header>Tip</header>
+                <input id="tip" type="text"  placeholder="0%" onkeyup="CalculateBill()">
+            </div>
+
+            
+            <h1 class="people-to-pay">People</h1>
+            <div class="people-added">
+                <button id="sub" onclick="decreasePeople()">-</button>
+                <span id="people" class="number-of-people">1</span>
+                <button id="add" onclick="increasePeople()">+</button>
+            </div>
+            <div class="total-amount-payable" >
+                <h1 class="">Total Per person</h1>
+                <div id="total" class="person-amount"> $0</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/javascript/App.js"></script>
+</body>
+</html>

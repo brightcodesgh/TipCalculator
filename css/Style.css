@@ -1,0 +1,146 @@
+*{
+    scroll-behavior: smooth;
+   
+}
+
+body{
+    background-color: #1E1E1E;
+    /* background-image: url('/images/math3.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    width: 100%;
+    /* backdrop-filter: blur(5px); */
+    
+}
+
+.inputs{
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    /* opacity: 0.5; */
+    padding: 10px;
+    width: 500px;
+    height: 480px;
+    /* box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.4); */
+    border-radius: 8px;
+}
+i{
+    display: block;
+    color: #eee;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 4px 4px 8px rgb(66, 66, 66);
+}
+
+header{
+    color: #eee;
+    font-size: 24px;
+    font-weight: 850;
+    margin: inherit;
+    
+}
+
+.inputs .input-amount, .input-tip{
+   margin-bottom: 5px;
+}
+
+.input-amount > input{
+    margin-bottom: 5%;
+}
+
+input{
+    padding: 10px;
+    font-size: 16px;
+    width: 440px;
+    margin: 5px;
+    border-radius: 5px;
+    border-bottom-color: #00070c;
+    outline: none;
+}
+.inputs .people-added{
+    display: flex;
+   padding: 15px;
+   align-items: center;
+} 
+
+button, span,h1{
+    color: #eee;
+   margin: 4px;
+
+}
+span{
+
+    font-size: 20px;
+    font-weight: 700;
+}
+.people-to-pay{
+    padding: 15px;
+}
+
+button{
+    display: block;
+    border-radius: 100%;
+    background-color: rgb(61, 61, 109);
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+
+
+}
+.inputs .total-amount-payable{
+    /* display: flex; */
+   text-align: right;
+    
+}
+
+.person-amount{
+    font-size: 20px;
+    color: lime;
+}
+
+
+@media screen and (max-width: 680px){ 
+
+
+    .inputs
+    { 
+        width: 100%;
+        margin: 0;
+    }
+    header{
+        font-size: 30px;
+    }
+   
+    .inputs input{
+        width: 350px;
+        padding: 15px;
+        font-size: 20px;
+    }
+    .person-amount{
+        font-size: 50px;
+    }
+
+    button{
+        width: 45px;
+        height: 50px;
+        font-size: 35px;
+    }
+    .number-of-people{
+        font-size: 35px;
+    }
+    .total-amount-payable{
+        margin: 20px;
+    }
+
+}
+
+
